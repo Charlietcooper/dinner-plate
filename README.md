@@ -228,4 +228,4 @@ For issues and questions:
 
 - **GitHub**: https://github.com/Charlietcooper/dinner-plate
 - **Project Name**: Dinner Plate
-- **Description**: Constellation annotation for wide-field astronomical images 
+- **Description**: Constellation annotation for wide-field astronomical images
