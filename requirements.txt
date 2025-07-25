@@ -12,4 +12,7 @@ requests>=2.25.0
 
 # Optional: For better star detection (if needed)
 # photutils>=1.5.0
-# sep>=1.2.0 
+# sep>=1.2.0
+
+# Advanced constellation fitting
+scipy>=1.10.0 

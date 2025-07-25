@@ -53,12 +53,17 @@ except ImportError as e:
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+from constellation_data_enhanced import EnhancedConstellationData
+from camera_config import get_camera_config, get_plate_solve_params
+
 class ConstellationData:
     """Manages constellation line data and star information."""
     
     def __init__(self):
-        self.constellation_lines = self._load_constellation_lines()
-        self.bright_stars = self._load_bright_stars()
+        # Use the enhanced constellation data
+        self.enhanced_data = EnhancedConstellationData()
+        self.constellation_lines = self.enhanced_data.constellation_lines
+        self.bright_stars = self.enhanced_data.bright_stars
     
     def _load_constellation_lines(self) -> Dict[str, List[Tuple[str, str]]]:
         """
@@ -189,7 +194,7 @@ class ConstellationData:
 class PlateSolver:
     """Handles plate solving using Astrometry.net."""
     
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, camera_config: str = "canon_200d"):
         self.api_key = api_key or os.getenv('ASTROMETRY_API_KEY')
         if not self.api_key:
             logger.warning("No Astrometry.net API key provided. Plate solving may fail.")
@@ -197,6 +202,12 @@ class PlateSolver:
         self.ast = AstrometryNet()
         if self.api_key:
             self.ast.api_key = self.api_key
+        
+        # Get camera configuration
+        self.camera_config = get_camera_config(camera_config)
+        self.plate_solve_params = get_plate_solve_params(self.camera_config)
+        
+        logger.info(f"Using camera: {self.camera_config['camera']} with {self.camera_config['lens']}")
     
     def solve_image(self, image_path: str) -> Optional[WCS]:
         """
@@ -210,11 +221,21 @@ class PlateSolver:
         """
         try:
             logger.info(f"Starting plate solve for {image_path}")
+            logger.info(f"Camera: {self.camera_config['camera']} at {self.camera_config['focal_length_mm']}mm")
             
-            # Try to solve the image
-            wcs_header = self.ast.solve_from_image(image_path, 
-                                                 solve_timeout=120,
-                                                 submission_id=None)
+            # Get plate solving parameters from camera config
+            solve_params = {
+                'solve_timeout': 120,
+                'submission_id': None,
+                'scale_est': self.plate_solve_params['scale_est'],
+                'scale_lower': self.plate_solve_params['scale_lower'],
+                'scale_upper': self.plate_solve_params['scale_upper'],
+                'scale_units': self.plate_solve_params['scale_units'],
+                'radius': self.plate_solve_params['radius'],
+            }
+            
+            # Try to solve the image with camera-specific parameters
+            wcs_header = self.ast.solve_from_image(image_path, **solve_params)
             
             if wcs_header:
                 logger.info("Plate solve successful!")
@@ -230,17 +251,17 @@ class PlateSolver:
 class ConstellationAnnotator:
     """Main class for annotating images with constellation lines."""
     
-    def __init__(self, api_key: Optional[str] = None):
-        self.plate_solver = PlateSolver(api_key)
+    def __init__(self, api_key: Optional[str] = None, camera_config: str = "canon_200d"):
+        self.plate_solver = PlateSolver(api_key, camera_config)
         self.constellation_data = ConstellationData()
         
-        # Drawing parameters
-        self.line_color = (0, 255, 0)  # Green
-        self.line_thickness = 2
-        self.star_color = (255, 255, 0)  # Yellow
-        self.star_radius = 3
-        self.text_color = (255, 255, 255)  # White
-        self.font_size = 16
+        # Drawing parameters - style matching reference image
+        self.line_color = (255, 0, 0)  # Blue (BGR format)
+        self.line_thickness = 1  # Thin lines
+        self.star_color = (255, 255, 255)  # White stars
+        self.star_radius = 2  # Small stars
+        self.text_color = (255, 255, 255)  # White text
+        self.font_size = 12  # Smaller font for better fit
         
     def load_image(self, image_path: str) -> Optional[np.ndarray]:
         """Load an image file (JPEG, PNG, or FITS)."""
@@ -359,13 +380,13 @@ class ConstellationAnnotator:
                         if (0 <= pixel1[0] < width and 0 <= pixel1[1] < height and
                             0 <= pixel2[0] < width and 0 <= pixel2[1] < height):
                             
-                            # Draw the line
+                            # Draw the line (thin blue line)
                             cv2.line(annotated_image, 
                                    (int(pixel1[0]), int(pixel1[1])),
                                    (int(pixel2[0]), int(pixel2[1])),
                                    self.line_color, self.line_thickness)
                             
-                            # Mark the stars
+                            # Mark the stars with small white dots
                             cv2.circle(annotated_image, 
                                      (int(pixel1[0]), int(pixel1[1])),
                                      self.star_radius, self.star_color, -1)
@@ -397,7 +418,13 @@ class ConstellationAnnotator:
             try:
                 font = ImageFont.truetype("arial.ttf", self.font_size)
             except:
-                font = ImageFont.load_default()
+                try:
+                    font = ImageFont.truetype("/System/Library/Fonts/Arial.ttf", self.font_size)
+                except:
+                    font = ImageFont.load_default()
+            
+            # Track label positions to avoid overlap
+            label_positions = []
             
             for constellation_name in constellation_names:
                 # Find a representative star for this constellation
@@ -410,10 +437,22 @@ class ConstellationAnnotator:
                     if star_coords:
                         pixel = self.sky_to_pixel(wcs, star_coords[0], star_coords[1])
                         if pixel:
-                            # Draw text
-                            text_x, text_y = int(pixel[0]) + 10, int(pixel[1]) - 10
-                            draw.text((text_x, text_y), constellation_name, 
-                                    fill=self.text_color, font=font)
+                            # Calculate label position (center of constellation)
+                            x, y = int(pixel[0]), int(pixel[1])
+                            
+                            # Check for overlap with existing labels
+                            overlap = False
+                            for pos in label_positions:
+                                if abs(x - pos[0]) < 50 and abs(y - pos[1]) < 20:
+                                    overlap = True
+                                    break
+                            
+                            if not overlap:
+                                # Draw text with slight offset
+                                text_x, text_y = x + 5, y - 5
+                                draw.text((text_x, text_y), constellation_name, 
+                                        fill=self.text_color, font=font)
+                                label_positions.append((x, y))
             
             # Convert back to OpenCV format
             image[:] = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)

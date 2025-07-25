@@ -124,6 +124,7 @@ python constellation_annotator.py your_image.jpg output.jpg --verbose
 - **$20/month**: 25000 solves/day
 - **Custom**: Higher limits available
 
+
 ---
 
 ## 🛡️ Security Notes
