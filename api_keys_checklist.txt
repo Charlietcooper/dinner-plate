@@ -1,0 +1,37 @@
+DINNER PLATE CONSTELLATION ANNOTATOR - API KEYS CHECKLIST
+========================================================
+
+REQUIRED API KEY:
+□ Astrometry.net API Key
+  □ Visit: https://nova.astrometry.net/
+  □ Create free account
+  □ Copy API key from profile
+  □ Set environment variable: export ASTROMETRY_API_KEY="your_key"
+  □ Test: echo $ASTROMETRY_API_KEY
+
+OPTIONAL API KEYS (for future enhancements):
+□ SIMBAD API Access
+  □ Visit: http://simbad.u-strasbg.fr/simbad/
+  □ Register for account
+  □ Request API access
+
+□ VizieR API Access
+  □ Visit: http://vizier.u-strasbg.fr/
+  □ Register for account
+  □ Request API access
+
+TESTING CHECKLIST:
+□ Run: python test_demo.py
+□ Run: python test_installation.py
+□ Test with sample image (when available)
+
+USAGE:
+□ Basic: python constellation_annotator.py input.jpg output.jpg
+□ With key: python constellation_annotator.py input.jpg output.jpg --api-key YOUR_KEY
+□ Verbose: python constellation_annotator.py input.jpg output.jpg --verbose
+
+NOTES:
+- Only Astrometry.net key is required for basic functionality
+- Free tier: 500 solves per day
+- Keep API keys private and never commit to Git
+- Use environment variables for security 
