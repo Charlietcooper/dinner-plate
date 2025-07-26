@@ -1,0 +1,25 @@
+{
+  "total_constellations": 14,
+  "total_stars": 55,
+  "hemispheres": {
+    "southern": 5,
+    "northern": 7,
+    "equatorial": 2
+  },
+  "constellations": [
+    "Crux",
+    "Carina",
+    "Vela",
+    "Centaurus",
+    "Scorpius",
+    "Ursa Major",
+    "Ursa Minor",
+    "Cassiopeia",
+    "Orion",
+    "Cygnus",
+    "Taurus",
+    "Gemini",
+    "Leo",
+    "Virgo"
+  ]
+}

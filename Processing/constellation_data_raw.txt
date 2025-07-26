@@ -1,0 +1,1079 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="/gfx/favicon.ico">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/cycle2.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Open+Sans:300,400,500,600,700,800|PT+Serif:400,400italic,700|PT+Mono:400|Inconsolata:400,700|Material+Icons+Round">
+<script>
+MathJax = {
+tex: {
+    inlineMath: [ ['`','`'], ['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script type="text/javascript" src="/js/jquery/jquery-1.12.4-patched.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/cycle/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="/js/cycle/jquery.cycle2.caption2.min.js"></script>
+<script type="text/javascript" src="/js/zoom/zooming.min.js"></script>
+<script type="text/javascript" src="/js/simple-lightbox/simple-lightbox.min.js"></script>
+<link rel="stylesheet" href="/css/simple-lightbox/simple-lightbox.css">
+<script>
+
+$(document).ready(function() {
+
+var lightbox = new SimpleLightbox('.wall-art a', { captionsData: 'lightbox-title', captionDelay: 500, showCounter: false, overlayOpacity: 0.85 });
+
+var lightbox = new SimpleLightbox('.talkslides a', { captionsData: 'lightbox-title', captionDelay: 500, showCounter: false, overlayOpacity: 0.85 });
+
+new Zooming({zIndex:2000,scaleBase:0.90}).listen('img.zoom');
+
+$('#newsflash .newsitem');
+	setInterval(function(){
+		$('#newsflash .newsitem').filter(':visible').fadeOut(500,function(){
+			if($(this).next('span.newsitem').size()){
+				$(this).next().fadeIn(500);
+			}
+			else{
+				$('#newsflash .newsitem').eq(0).fadeIn(500);
+			}
+		});
+	},5000);
+
+$('#quotes .quote');
+	setInterval(function(){
+		$('#quotes .quote').filter(':visible').fadeOut(500,function(){
+			if($(this).next('span.quote').size()){
+				$(this).next().fadeIn(500);
+			}
+			else{
+				$('#quotes .quote').eq(0).fadeIn(500);
+			}
+		});
+	},5000);
+
+
+});
+</script>
+<!-- not loading videojs -->
+<meta name="keywords" content="bioinformatics, circos, hive plot, genome sciences center, genomics, biology, genome, human genome, cancer research, constellations, figure, asterism, iau, star, chart, map, sky, science, art, visualization, martin, krzywinski, martin krzywinski, data visualization, design, science communication, scicomm, datavis, infographics, education, information graphics, graph, network">
+<title>Martin Krzywinski - Sky Constellations Shapes and Resources - Canada's Michael Smith Genome Sciences Centre</title>
+</head>
+<body>
+<div id=pagewrap-container>
+<div id=preamble class="center vpad4 bbot1">
+<a class=piday href="/pi/piday2025">2025 <span class=lcase>&pi;</span> Day</a>
+<a href="/update">latest news</a>
+<a href="https://martin-krzywinski.pixels.com">buy art</a>
+</div>
+<div id=iconquotes class="bbot1 vpad2 vmar">
+<div id=crumb-trail-outer>
+<a class="crumb-in-trail crumb0" href="/"><span class='material-icons-round'>home</span></a>
+<a class="crumb-in-trail crumb0" href="mailto:martink@bcgsc.ca"><span class='material-icons-round'>email</span></a>
+<a class="crumb-in-trail crumb0" href="http://www.lumondo.com"><span class='material-icons-round'>photo_camera</span></a>
+<a class="crumb-in-trail crumb0" href="https://twitter.com/@mkrzywinski"><span class='material-icons-round'>tag</span></a>
+</div>
+<div id=quotes>
+<span class=quote >
+<span class=text>This love's a nameless dream.</span> 
+&bull; <span class=author>Cocteau Twins</span>
+&bull; <a href="http://bit.ly/egQCTy">try to figure it out</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Trance opera&mdash;Spente le Stelle</span> 
+&bull; <a href="http://bit.ly/g0IoX2">be dramatic</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Love itself became the object of her love.</span> 
+&bull; <span class=author>Jonathan Safran Foer</span>
+&bull; <a href="https://en.wikipedia.org/wiki/Everything_Is_Illuminated">count sadnesses</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>And she looks like the moon. So close and yet, so far.</span> 
+&bull; <span class=author>Future Islands</span>
+&bull; <a href="https://www.youtube.com/watch?v=4S9YtRnlPMk">aim high</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>listen; there's a hell of a good universe next door: let's go.</span> 
+&bull; <span class=author>e.e. cummings</span>
+&bull; <a href="http://www.flickr.com/photos/fullaperture/499721638/">go there</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Embrace me, surround me as the rush comes.</span> 
+&bull; <span class=author>Motorcycle</span>
+&bull; <a href="https://www.youtube.com/watch?v=cb61AVsxD34">drift deeper into the sound</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Sun is on my face ...a beautiful day without you.</span> 
+&bull; <span class=author>Royskopp</span>
+&bull; <a href="https://www.youtube.com/watch?v=p1IYrUzEAQo">be apart</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>And whatever I do will become forever what I've done.</span> 
+&bull; <span class=author>Wislawa Szymborska</span>
+&bull; <a href="https://www.brainpickings.org/2015/07/02/amanda-palmer-reads-wislawa-szymborska/">don't rehearse</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Drive, driven. Gave, given.</span> 
+&bull; <span class=author>Yello</span>
+&bull; <a href="https://www.youtube.com/watch?v=rPnjpEAOfDw">Give me a number of games.</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Thoughts rearrange, familiar now strange.</span> 
+&bull; <span class=author>Holly Golightly &amp; The Greenhornes </span>
+&bull; <a href="http://www.youtube.com/watch?v=VfhSqcn5K2Y">break flowers</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>music + dance + projected visuals</span> 
+&bull; <span class=author>Nosaj Thing</span>
+&bull; <a href="http://www.youtube.com/watch?v=_woNBiIyOKI">marvel at perfect timing</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Tango is a sad thought that is danced.</span> 
+&bull; <span class=author>Enrique Santos Disc&eacute;polo</span>
+&bull; <a href="http://bit.ly/gnOl9R">think &amp; dance</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Feel the vibe, feel the terror, feel the pain</span> 
+&bull; <span class=author>Hooverphonic</span>
+&bull; <a href="http://www.youtube.com/watch?v=JKLw7OXvpAY">Mad about you, orchestrally.</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Where am I supposed to go? Where was I supposed to know?</span> 
+&bull; <span class=author>Violet Indiana</span>
+&bull; <a href="url://bit.ly/gsDhMY">get lost in questions</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>I'm not real and I deny I won't heal unless I cry.</span> 
+&bull; <span class=author>Cocteau Twins</span>
+&bull; <a href="https://www.youtube.com/watch?v=Yna3wMFi_W4">let it go</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Lips that taste of tears, they say, are the best for kissing.</span> 
+&bull; <span class=author>Dorothy Parker</span>
+&bull; <a href="http://bit.ly/eUhIuS">get cranky</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>This love loves love. It's a strange love, strange love.</span> 
+&bull; <span class=author>Liz Fraser</span>
+&bull; <a href="http://bit.ly/ek4yro">find a way to love</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Poetry is just the evidence of life. If your life is burning well, poetry is just the ash</span> 
+&bull; <span class=author>Leonard Cohen</span>
+&bull; <a href="http://bit.ly/hM1J3y">burn something</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>What do the trees know.</span> 
+&bull; <span class=author>Laleh</span>
+&bull; <a href="https://www.youtube.com/watch?v=LETqwqYtYVU">sway, sway, sway</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>syncopation &amp; accordion</span> 
+&bull; <span class=author>Cafe de Flore (Doctor Rockit)</span>
+&bull; <a href="https://www.youtube.com/watch?v=jQrsGpFewWo">like France, but no dog poop</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Twenty &mdash; minutes &mdash; maybe &mdash; more.</span> 
+&bull; <span class=author>Naomi</span>
+&bull; <a href="https://www.youtube.com/watch?v=8szDdM2ETAs">choose four words</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Here we are now at the middle of the fourth large part of this talk.</span> 
+&bull; <span class=author>Pepe Deluxe</span>
+&bull; <a href="https://www.youtube.com/watch?v=58KZoG-A51c">get nowhere</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Safe, fallen down this way, I want to be just what I am.</span> 
+&bull; <span class=author>Cocteau Twins</span>
+&bull; <a href="https://www.youtube.com/watch?v=l5Y98fPyvfo">safe at last</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>Without an after or a when.</span> 
+&bull; <span class=author>Papercut feat. Maiken Sundby</span>
+&bull; <a href="https://www.youtube.com/watch?v=1Si8b5hRAOc">can you hear the rain?</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+<span class=quote style='display: none;'>
+<span class=text>In your hiding, you're alone. Kept your treasures with my bones.</span> 
+&bull; <span class=author>Coeur de Pirate</span>
+&bull; <a href="https://www.youtube.com/watch?v=mFDDJaUF0YE&list=PLXaL0ddraQuaKxuEveaHoQwUTht1KlrCK">crawl somewhere better</a>
+&bull; <a href="/quotes">more quotes</a>
+</span>
+</div>
+</div>
+<div id=header class="vmar2">
+<div>
+<a href="https://www.bcgsc.ca"><img src="/gfx/gsc-logo-bw.svg" style="height: 90%" alt="Canada's Michael Smith Genome Sciences Center / PHSA / Vancouver, Canada / www.bcgsc.ca"></a>
+</div>
+<div><a href="https://mk.bcgsc.ca"><img src="/bio/martin-krzywinski-logo.svg" alt="Martin Krzywinski / Canada's Michael Smith Genome Sciences Center / mk.bcgsc.ca"></a></div>
+<div>
+<a href="https://www.phsa.ca"><img class=vmart1 src="/gfx/phsa-black-horizontal.svg" style="height: 80%" alt="BC Cancer, Vancouver, Canada"></a>
+</div>
+</div> <!-- header -->
+<div class="on-the-side vpad1 bbot1">
+<div class=crumb>very clickable</div>
+<div class=vpad1>
+<a class=notactive href="/pi"><span style="text-transform:lowercase;font-family: 'Palatino, serif';">&pi;</span> day</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/asciiart">ASCII</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/yesorno">choices</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/fun/clock">clocks</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/color">color</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=active href="/constellations">constellations</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/covers">covers</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/deadlygenomes/?sars-cov-2">deadly genomes</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/debates2016">debates</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/tree.of.emotional.life">emotions</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/rat/images/raton3700">famous rat</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/1bit">gigapixel skies</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/hitchens">hitchens</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/carpalx">keyboards</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/fun/globe">languages</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/lotro">LOTRO</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/music-theory">music theory</a>
+<sup><span style="color: red;margin-left:-0.5em;font-size:80%;font-weight:bold;">NEW</span></sup>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="http://www.lumondo.com">photography</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/topquestions">questions</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/quotes">quotes</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/googlemapschallenge">road trips</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/fun/ubcrocket">rockets</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/fun/dummer">satire</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/fun/eespammings">spam poetry</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/fun/hdtr">time</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/tripsum">tripsum</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/typography">type</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/unwords">unwords</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/universe-superclusters-and-voids">voids</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/fun/neologism">words</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/writing">writing</a>
+<span style="padding: 0 0.2em;" class=sep>&middot;</span>
+<a class=notactive href="/zaomm">zaomm</a>
+</div>
+</div>
+<a name="projecthome"></a>
+<div id=page-2-panel>
+<div id=page-content>
+<div id=crumb-trail-inner class="vmar1 vmarb4">
+<div class=top><a href="#pagewrap-container"><span class="material-icons-round">keyboard_double_arrow_up</span></a></div>
+<a class="crumb-in-trail crumb0" href="/"><span class='material-icons-round'>home</span></a><span class=crumb-in-trail-delim>&gt;</span><a class="crumb-in-trail crumb1" href="/constellations/#projecthome">Sky Constellation Figures and Sky Maps</a>
+</div>
+<style>
+</style>
+<div class=crumb>data visualization 
+<span class=red><b>+</b></span> art</div>
+<div class=note-grid-v2>
+<div class=note-image-v2>
+<a href="/pi/piday2017">
+<img src="/images/note/piday-2017.png">
+</a>
+</div>
+<div class=note-caption-v2>
+<a href="/pi/piday2017">
+<div class=note-title-v2>&pi; in the sky
+</a>
+<span class=titlesep>&middot;</span>
+</div>
+
+If you like space, you will love this. The <a href="/pi/piday2017">2017 &pi; Day art</a> imagines the digits of &pi; as a star catalogue with constellations of extinct animals and plants. The work is featured in the article <a href="https://blogs.scientificamerican.com/sa-visual/pi-in-the-sky/">Pi in the Sky</a> at the Scientific American <a href="http://blogs.scientificamerican.com/sa-visual">SA Visual blog</a>.
+
+
+
+</div>
+</div>
+<div class=note-grid-v2>
+<div class=note-image-v2>
+<a href="/universe-superclusters-and-voids">
+<img src="/images/note/universe-voids-and-superclusters.png">
+</a>
+</div>
+<div class=note-caption-v2>
+<a href="/universe-superclusters-and-voids">
+<div class=note-title-v2>A map of the universe
+</a>
+<span class=titlesep>&middot;</span>
+</div>
+
+If you like space, you'll love my the <a href="/universe-superclusters-and-voids">12,000 billion light-year map of clusters, superclusters and voids</a>. Find the biggest nothings in Bo&ouml;tes and Eridanus.The largest map there is shows the location of voids and galaxy superclusters in our visible universe.
+
+
+
+</div>
+</div>
+<h1>Sky Constellation Shapes and Resources</h1>
+<p class=quote>
+null<br>
+from an undefined<br>
+place, <br>
+undefined<br>
+create (a place)<br>
+an account<br>
+of us
+<br class=br1><span class=norm>&mdash; Viorica Hrincu</span>
+</p>
+<p>Having recently drawn a few skycharts (<a href="/universe-superclusters-and-voids">Superclusters & Voids</a>, <a href="http://www.sanctuaryproject.eu">Sanctuary Project</a>), I was frustrated by the lack of parsable resources for the <a href="https://www.iau.org/public/themes/constellations/">Constellations</a>. Not being able to find a plain-text parsable definition of the constellation figures proved impossible, I created my own.
+
+<p>Quotes on this page are from my conversation with the folks at <a href="https://skyandtelescope.org">Sky & Telescope</a> and <a href="https://www.iau.org/public/themes/constellations/">IAU</a>.
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div.tabmenu {
+  /*border: 1px solid red;*/
+  margin-top:    25px;
+  margin-bottom: 15px;
+  width:         100%;
+/*  margin:         25px -12px 15px -7px;*/
+  padding-left:   10px;
+  padding-bottom: 6px;
+  border-bottom:  2px solid #ccc;
+  z-index:        5;
+
+}
+
+.hamburger {
+  position:  relative;
+  font-size: 20px;
+  top:       6px;
+}
+
+div.tabmenu a {
+  
+font-family: "Open Sans", helvetica, verdana, sans-serif;
+
+  font-size:      10px; 	   
+  font-weight:    400;
+  letter-spacing: 0.35px;
+  position:       relative;
+  top:            0px;
+//bottom:         5px;
+  text-transform: uppercase;
+  padding:        5px 6px 6px;
+  margin:         0 4px 0;
+  color:          #666;
+  border:         1px solid #ccc;
+  background:     #eee;
+  z-index:        0;
+  border-radius:  5px 5px 0 0;
+}
+
+
+div.tabmenu a.active {
+  background:      #fff200;
+  color:           #333;
+  border-bottom:   none;
+  text-decoration: none;
+  z-index:         10;
+  padding-bottom:  8px;
+}
+
+
+div.tabmenu a.level0 {
+color:      #666 ;
+background: #eee ;
+}
+
+div.tabmenu a.level1 {
+color:      #867660 ;
+background: #f8f4d7 ;
+}
+
+div.tabmenu a.level2 {
+color:      #896742 ;
+background: #fef3de ;
+}
+
+div.tabmenu a.level3 {
+color:      #666 ;
+background: #efefef ;
+}
+
+div.tabmenu a:hover {
+background:      #fff200 ;
+/*border-color:    #ccc;*/
+text-decoration: none;
+}
+
+div.tabmenu a.level1:hover {
+background:      #f5eeb6 ;
+}
+
+div.tabmenu a.level2:hover {
+background:      #ffe9ad ;
+}
+
+div.tabmenu a.level3:hover {
+background:      #eee ;
+}
+
+div.tabmenu a.active:hover {
+border-color: #ccc !important;
+}
+
+
+</style>
+<a style="position:relative;top:-25px;" id=l0home></a>
+<div class="tabmenu">
+<a href="/constellations/index.mhtml#projecthome" class='menutab'><span class="material-icons-round hamburger">menu</span></a>
+<a href="/constellations/sky-constellations.mhtml#projecthome" class='menutab'>constellations</a>
+<a href="/constellations/sky-maps.mhtml#projecthome" class='menutab'>maps</a>
+<a href="/constellations/credits.mhtml#projecthome" class='menutab'>credits</a>
+</div>
+<div class="toc vmar1 bbot1">
+<h3 id="top">contents</h3>
+<ul>
+<li><a href="#who-is-in-charge-here-">1 <b>&middot;</b> <span class="depth0">Who is in charge here?</span></a></li>
+<li><a href="#constellation-figures">2 <b>&middot;</b> <span class="depth0">Constellation figures</span></a></li>
+<ul>
+<li><a href="#figures-can-connect">2.1 <b>&middot;</b> <span class="depth1">Figures can connect</span></a></li>
+<li><a href="#connections-may-have-gaps">2.2 <b>&middot;</b> <span class="depth1">Connections may have gaps</span></a></li>
+<ul>
+<li><a href="#hydra">2.2.1 <b>&middot;</b> <span class="depth2">Hydra</span></a></li>
+<li><a href="#orion">2.2.2 <b>&middot;</b> <span class="depth2">Orion</span></a></li>
+</ul>
+<li><a href="#carina-intersects-volans">2.3 <b>&middot;</b> <span class="depth1">Carina intersects Volans</span></a></li>
+</ul>
+<li><a href="#conversation-with-alan-macrobert">3 <b>&middot;</b> <span class="depth0">Conversation with Alan MacRobert</span></a></li>
+<ul>
+<li><a href="#virgo">3.1 <b>&middot;</b> <span class="depth1">Virgo</span></a></li>
+<li><a href="#hercules">3.2 <b>&middot;</b> <span class="depth1">Hercules</span></a></li>
+<li><a href="#centaurus-and-lupus">3.3 <b>&middot;</b> <span class="depth1">Centaurus and Lupus</span></a></li>
+<li><a href="#cassiopea">3.4 <b>&middot;</b> <span class="depth1">Cassiopea</span></a></li>
+<li><a href="#sagittarius">3.5 <b>&middot;</b> <span class="depth1">Sagittarius</span></a></li>
+</ul>
+<li><a href="#download-constellation-figures">4 <b>&middot;</b> <span class="depth0">Download constellation figures</span></a></li>
+</ul>
+</div>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h2 id=who-is-in-charge-here->1 <b>&middot;</b> Who is in charge here?</h2>
+</div>
+<p>You might be surprised to learn (I certainly was) that while the <a href="https://www.iau.org">International Astronomial Union</a> has a <a href="https://www.iau.org/science/scientific_bodies/working_groups/280/">working group on stars names (WGSN)</a>, nobody is actually in charge of defining a canonical set of constellation shapes. I know &mdash; the horror, the horror.
+
+<p class=quote>
+While the IAU constellation boundaries, constellation names, and star
+names have 'official' IAU values/names, the lines connecting the stars
+are subject to the artist.
+
+<br class=br1>&mdash;<a href="https://iau.org/administration/membership/individual/10983/">Eric Mamajek</a>
+(chair, IAU WG Star Names)
+
+</p>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h2 id=constellation-figures>2 <b>&middot;</b> Constellation figures</h2>
+</div>
+<p>While the IAU maintains a <a href="https://www.iau.org/public/themes/constellations/">page of constellation maps</a>, these maps were actually produced at <a href="https://skyandtelescope.org">Sky & Telescope magazine</a> by <a href="https://skyandtelescope.org/about-us/roger-w-sinnott/">Roger Sinnott</a>, who put out the excellent <a href="https://shopatsky.com/products/jumbo-pocket-sky-atlas-second-edition/">Pocket Sky Atlas</a>. 
+
+<p class=quote>
+&ldquo;The constellation figures on the IAU set of charts came from
+Sky & Telescope, where they were designed by Alan MacRobert and have
+been used in the magazine since the early 1990s. They aren't official
+in any sense, but Alan did give them a lot of careful thought.&rdquo;
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/roger-w-sinnott/">Roger Sinnott</a> (Sky & Telescope)</span>
+</p>
+<p>The constellation shapes themselves were designed for Sky & Telescope by <a href="https://skyandtelescope.org/about-us/alan-m-macrobert">Alan MacRobert</a>. Alan was influenced by shapes drawn by H.A. Rey in his book <a href="https://en.wikipedia.org/wiki/The_Stars:_A_New_Way_to_See_Them">Stars: A New Way to See Them</a> but in many cases adjusted them to preserve earlier traditions.
+
+
+<p class=quote>
+&ldquo;I'm gratified at how the astronomical world has been
+gravitating to our constellation figures over the years, starting
+with the IAU. I put a great deal of thought into them.&rdquo;
+
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/alan-m-macrobert/">Alan MacRobert</a> (Sky & Telescope)</span>
+</p>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=figures-can-connect>2.1 <b>&middot;</b> Figures can connect</h3>
+</div>
+<p>A figure for a constellation may connect to one or more
+neighbouring figures. For example, the figure of Carina connects to
+Puppis and Vela.
+
+
+
+
+<div class="image" style="width:620px;"><div>
+<img class="zoom" data-original="img/carina-constellation.png"  src="img/carina-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="620px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>CARINA CONSTELLATION | </b>Carina connects to Vela (via Regor and Alsephina), Puppis (via Canopus) and Pyxis.
+
+
+</div>
+</div></div>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=connections-may-have-gaps>2.2 <b>&middot;</b> Connections may have gaps</h3>
+</div>
+<p>Some connections terminate short of their endpoint &mdash; these gaps
+were intentionally included by Alan in his original designs. The gaps
+are indicated by a flag in the figure records and a unit vector along
+the line is included on either end to help you draw the line short of
+its end.
+
+<p>In the case of Carina (above), you can see that its connections to
+the stars of Vela and Puppis have a gap.
+
+<p>Two other examples (of many) are Hydra and Orion.
+
+
+
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h4 id=hydra>2.2.1 <b>&middot;</b> Hydra</h4>
+</div>
+<div class="vmar4" style="width:620px;"><div>
+<img class="zoom" data-original="img/hydra-constellation.png"  src="img/hydra-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="620px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>HYDRA CONSTELLATION | </b>In the long serpentine figure of Hydra, there are short gaps around Alpha and Beta Crateris.
+
+
+</div>
+</div></div>
+<p class=quote>
+
+&ldquo;There are other cases, too, when our lines do not quite connect to
+stars. For example, in the long serpentine figure of Hydra, we
+intentionally left short gaps around &alpha; and &beta; Crateris. That's
+because those stars officially belong to Crater, rather than Hydra,
+even though they take part in the geometrical figures of both.&rdquo;
+
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/roger-w-sinnott/">Roger Sinnott</a> (Sky &
+Telescope)</span>
+</p>
+    
+
+
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h4 id=orion>2.2.2 <b>&middot;</b> Orion</h4>
+</div>
+<div class="vmar4" style="width:620px;"><div>
+<img class="zoom" data-original="img/orion-constellation.png"  src="img/orion-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="620px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>ORION CONSTELLATION | </b>Orion has a raised arm (the single line from <i>&alpha;</i> Orionis to <i>&mu;</i> and the <i>&xi;&ndash;&nu;</i> pair) wielding a heavy club (outlined by <i>&xi;&ndash;&nu;&ndash;&chi;</i><sup>1</sup><i>&ndash;&chi;</i><sup>2</sup>).
+
+
+</div>
+</div></div>
+<p class=quote>
+
+&ldquo;Alan [added gaps] quite consciously, to give the simple
+geometric figure a shape more like a man with two legs (i.e., like
+Orion, the Hunter, in mythology). And as a hunter, Orion has a raised
+arm (the single line from <i>&alpha;</i> Orionis to <i>&mu;</i> and
+the <i>&xi;&ndash;&nu;</i> pair) wielding a heavy club (outlined
+by <i>&xi;&ndash;&nu;&ndash;&chi;</i><sup>1</sup><i>&ndash;&chi;</i><sup>2</sup>).
+
+<br class=br1>
+
+Among the charts there are several other cases of a line going to the
+rough midpoint of two close stars, because the observer thinks of them
+as a pair rather than two distinct stars.&rdquo;
+
+<br class=br1><span class=norm>&mdash; [Roger
+Sinnott](https://skyandtelescope.org/about-us/roger-w-sinnott/) (Sky &
+Telescope)</span>
+<p>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=carina-intersects-volans>2.3 <b>&middot;</b> Carina intersects Volans</h3>
+</div>
+<p>Connections of figures do not intersect except for the edge case of
+Carina and Volans. The <i>&alpha;&ndash;&beta;</i> connection of
+Carina crosses Volans and intersects its <i>&alpha;&ndash;&beta;</i>
+and <i>&alpha;&ndash;&epsilon;</i> connections.
+
+<p>This resolved by introducing a gap in the Carina <i>&alpha;&ndash;&beta;</i> line. 
+
+
+
+
+<div class="vmar4" style="width:620px;"><div>
+<img class="zoom" data-original="img/volans-constellation.png"  src="img/volans-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="620px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>VOLANS CONSTELLATION | </b>A line in Carina cuts through Volans.
+
+
+</div>
+</div></div>
+<p class=quote>
+
+&ldquo;I forgot to mention one more situation where a gap occurs in
+the [figure] of a constellation, at least as implemented in our
+S&T software. We did not want a line belonging to one constellation
+to cross or intersect a line of another constellation. The best
+example (maybe the only example) appears on the attached chart of
+Volans.&rdquo;
+
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/roger-w-sinnott/">Roger Sinnott</a> (Sky & Telescope)</span>
+</p>
+<p>The <i>&alpha;&ndash;&beta;</i> gap is not encoded in my file
+because its position depends on the projection.
+
+<p class=quote>
+&ldquo;In our software, we took care of this and other gaps in lines
+by adding fictitious stars to the database for the lines to end
+on. These fictitious stars lie on the great circle between the two
+real stars that define the line. This way, a graphic artist who
+finalizes a chart does not have to remember to insert needed gaps
+manually.&rdquo;
+
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/roger-w-sinnott/">Roger Sinnott</a> (Sky & Telescope)</span>
+</p>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h2 id=conversation-with-alan-macrobert>3 <b>&middot;</b> Conversation with Alan MacRobert</h2>
+</div>
+<p>I had a great exchange with Alan about the figures. 
+
+<p>Here, he comments about his design philosophy.
+
+<p class=quote>
+Each [figure] is a compromise between competing priorities.
+<br class=br1>
+The lines must include the lines that the eye can't help but naturally
+see. Two bright stars near each other must be connected because
+that's what the eye does, no escaping it.
+<br class=br1>
+Figures should look like the thing named if reasonably possible. I
+started with H. A. Rey's groundbreaking figures in his constellation
+guide <a href="https://en.wikipedia.org/wiki/The_Stars:_A_New_Way_to_See_Them">The Stars, a New Way to See Them</a> (1952). 
+<br class=br1>
+But Rey committed four sins.
+<br class=br1>
+<span style="display:block;margin-left:1em;">1 &mdash; He occasionally fudged star positions
+slightly to make his figures work better.</span>
+<br class=br1>
+<span style="display:block;margin-left:1em;">2 &mdash; He sometimes used stars too
+faint for most modern skywatchers to see.</span> 
+<br class=br1>
+<span style="display:block;margin-left:1em;">3  &mdash; He often connected stars
+with line patterns too complicated for the eye to see easily, while
+skipping the lines between brighter stars that the eye can't help but
+see.</span>
+<br class=br1>
+<span style="display:block;margin-left:1em;">4 &mdash; And, he paid no attention to the constellations' deep heritage in how they have been oriented and depicted since Greco-Roman times. This
+often makes them conflict with the representations that were the basis
+of it all and that are seen throught astronomy literature.</span>
+<br class=br1>
+I tried to make realistic stick figures that <b>did</b> match ancient
+representations, as recorded in the Almagest star names ('foot,'
+'knee', 'tail', etc.) and old depictions going back to the <a href="https://en.wikipedia.org/wiki/Farnese_Atlas">Farnese Globe</a>.
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/alan-m-macrobert/">Alan MacRobert</a> (Sky & Telescope)</span>
+</p>
+<div class="image" style="margin-left:1em;;width:300px;;float:right;"><div>
+<img class="zoom" data-original="img/virgo-constellation.png"  src="img/virgo-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="300px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>VIRGO CONSTELLATION | </b>Virgo is holding the ear of grain (Spica) in one hand and sowing seeds on the springtime fields with her other hand.
+
+
+</div>
+</div></div>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=virgo>3.1 <b>&middot;</b> Virgo</h3>
+</div>
+<p class=quote>
+The Virgo I eventually came up with, for instance, not only
+matches her ancient arrangement but for the first time, as far as I
+know, matches her activity: holding the ear of grain Spica in one hand
+and sowing seeds on the springtime fields with her other hand.
+<br class=br1>
+I suspect that I rediscovered the original Virgo as seen by farmers
+and herdsmen outdoors at night before the 'fine arts' took over
+(starting with the artist hired to paint the constellations on a
+ceiling in the palace of Philip of Macedon. A king doesn't want grubby
+shepherds' stick figures, he wants Fine Art to show off. And so it
+began.)
+
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/alan-m-macrobert/">Alan MacRobert</a> (Sky & Telescope)</span>
+</p>
+<br clear=both>
+<div class="image" style="margin-left:1em;;width:300px;;float:right;"><div>
+<img class="zoom" data-original="img/hercules-constellation.png"  src="img/hercules-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="300px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>HERCULES CONSTELLATION | </b>The head, the knee and the club.
+
+
+</div>
+</div></div>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=hercules>3.2 <b>&middot;</b> Hercules</h3>
+</div>
+<p class=quote>
+Similarly, I went with the Hercules who has 'Head of the Giant' as
+his head star, 'Knee' as his knee star, and 'Club' as the top of his
+club. 
+<br class=br1>This makes Hercules hold out his lion skin in front of him,
+echoing Orion also waving a club over his head and holding out a lion
+skin in front of him. I doubt that was a coincidence.
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/alan-m-macrobert/">Alan MacRobert</a> (Sky & Telescope)</span>
+<br clear=both>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=centaurus-and-lupus>3.3 <b>&middot;</b> Centaurus and Lupus</h3>
+</div>
+<div class="image" style="margin-left:1em;;width:300px;;float:right;"><div>
+<img class="zoom" data-original="img/lupus-constellation.png"  src="img/lupus-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="300px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>LUPUS CONSTELLATION | </b>Stabbed in the head by Centaurus' spear.
+
+
+</div>
+</div></div>
+<p class=quote>
+<br class=br1>And I made sure that Lupus is being stabbed in the
+throat by Centaurus thrusting a spear.
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/alan-m-macrobert/">Alan MacRobert</a> (Sky & Telescope)</span>
+</p>
+<br clear=both>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=cassiopea>3.4 <b>&middot;</b> Cassiopea</h3>
+</div>
+<div class="image" style="margin-left:1em;;width:300px;;float:right;"><div>
+<img class="zoom" data-original="img/cassiopeia-constellation.png"  src="img/cassiopeia-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="300px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>CASSIOPEIA CONSTELLATION | </b>It's a W, no matter what.
+
+
+</div>
+</div></div>
+<p class=quote>
+But a few just had to be what everybody now sees.
+<br class=br1>
+Cassiopeia is a W no matter what &mdash; even though her stars, including
+fainter ones connected in the ancient order by name from head to foot,
+suggest an evocative profile outline of a grieving woman.
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/alan-m-macrobert/">Alan MacRobert</a> (Sky & Telescope)</span>
+</p>
+<br clear=both>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h3 id=sagittarius>3.5 <b>&middot;</b> Sagittarius</h3>
+</div>
+<div class="image" style="margin-left:1em;;width:300px;;float:right;"><div>
+<img class="zoom" data-original="img/sagittarius-constellation.png"  src="img/sagittarius-constellation.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="300px">
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>SAGITTARIUS CONSTELLATION | </b>Celestial teapot.
+
+
+</div>
+</div></div>
+<p class=quote>
+...and Sagittarius is a teapot, even though H. A. Ray's version is
+more or less historically correct, bow and arrow and all as far as I
+could tell.
+<br class=br1><span class=norm>&mdash; <a href="https://skyandtelescope.org/about-us/alan-m-macrobert/">Alan MacRobert</a> (Sky & Telescope)</span>
+</p>
+<br clear=both>
+<div class=tocsection>
+<div class=top><a href="#top"><span class="material-icons-round">keyboard_arrow_up</span></a></div>
+<h2 id=download-constellation-figures>4 <b>&middot;</b> Download constellation figures</h2>
+</div>
+<p>This file contains all the information you need to draw basic star maps (with name and designation labels) and constellation figures. It is the most complete (and self-contained) sky constellation dataset of its kind &mdash; if you find something better, <a href="mailto:martink@bcgsc.ca">let me know</a>!
+
+<p>To learn more, read the <a href="sky-constellations.mhtml#l0home">detailed explanation of this file</a>.
+
+
+<center>
+<div style="width:300px;" class="button ">
+<a href="data/constellation.figures.txt">
+<span class="icon material-icons-round">file_download</span>
+<span class=title>constellation figures</span>
+<span class=description>Complete set of sky constellation shapes as paths and as pairwise. Includes data on all stars at shape nodes.</span>
+<span class=stamp>16 Nov 2023 | 5,330,270 bytes</span>
+</a>
+</div></center>
+</div> <!-- page-content -->
+<div id=page-thoughts>
+<div class=crumb style="float:right;"><a href="/news">VIEW ALL</a></div>
+<div class=crumb>news 
+<span class=red><b>+</b></span> thoughts</div>
+<div class="thought bbot1">
+<h1><a href="https://mk.bcgsc.ca/beyond-belief-campaign-brca-art">Beyond Belief Campaign BRCA Art</a></h1>
+<div class="sans timestamp vmar1">
+Wed 11-06-2025
+</div>
+<p>Fuelled by philanthropy, findings into the workings of BRCA1 and BRCA2 genes have led to groundbreaking research and lifesaving innovations to care for families facing cancer.
+
+<p>This set of <a href="/beyond-belief-campaign-brca-art">100 one-of-a-kind prints</a> explore the structure of these genes. Each artwork is unique &mdash; if you put them all together, you get the full sequence of the BRCA1 and BRCA2 proteins.
+
+
+
+
+<div class="image" style="width:325;"><div>
+<a href="/beyond-belief-campaign-brca-art">
+<img    src="/beyond-belief-campaign-brca-art/web/brca1-brca2-genes-on-path-003-small.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="325">
+</a>
+</div></div>
+</div>
+<div class="thought bbot1">
+<h1><a href="
+
+http://www.nature.com/articles/s41592-025-02629-y
+">Propensity score weighting</a></h1>
+<div class="sans timestamp vmar1">
+Mon 17-03-2025
+</div>
+<p><i>The needs of the many outweigh the needs of the few. &mdash;Mr. Spock (Star Trek II)</i></p>
+<p>This month, we explore a related and powerful technique to address bias: propensity score weighting (PSW), which applies weights to each subject instead of matching (or discarding) them.
+
+
+
+
+<div class="image" style="width:325px;"><div>
+<a href="http://www.nature.com/articles/s41592-025-02629-y">
+<img    src="/pointsofsignificance/img/pointsofsignificance-propensity-score-weighting.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="325px">
+</a>
+<div class=caption>
+<span class=vsmall>&#9650;</span> Nature Methods Points of Significance column: Propensity score weighting.
+
+
+(<a href="http://www.nature.com/articles/s41592-025-02629-y">read</a>)
+</div>
+</div></div>
+<p class=small>
+
+
+Kurz, C.F., Krzywinski, M. & Altman, N.  (2025) <a href='http://www.nature.com/articles/s41592-025-02629-y'>Points of significance: Propensity score weighting</a>. <i>Nat. Methods</i> <b>22</b>:1&ndash;3.
+</p>
+</div>
+<div class="thought bbot1">
+<h1><a href="https://mk.bcgsc.ca/pi/piday2025">Happy 2025 <span class=lcase>π</span> Day&mdash;<br>TTCAGT: a sequence of digits</a></h1>
+<div class="sans timestamp vmar1">
+Thu 13-03-2025
+</div>
+<p>Celebrate π Day (March 14th) and sequence digits like its 1999. Let's <a href="/pi/piday2025">call some peaks</a>.
+
+
+
+
+<div class="image" style="width:325;"><div>
+<a href="/pi/piday2025">
+<img    src="/pi/piday2025/img/piday-2025-masthead-square.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="325">
+</a>
+<div class=caption>
+<span class=vsmall>&#9650;</span> <b>2025 π DAY | </b>TTCAGT: a sequence of digits. The digits of π are encoded into DNA sequence and visualized with Sanger sequencing.
+
+
+(<a href="/pi/piday2025">details</a>)
+</div>
+</div></div>
+</div>
+<div class="thought bbot1">
+<h1><a href="
+
+https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034555
+">Crafting 10 Years of Statistics Explanations: Points of Significance</a></h1>
+<div class="sans timestamp vmar1">
+Sun 09-03-2025
+</div>
+<p><i>I don’t have good luck in the match points. &mdash;Rafael Nadal, Spanish tennis player</i></p>
+<p>Points of Significance is an ongoing series of short articles about statistics in Nature Methods that started in 2013. Its aim is to provide clear explanations of essential concepts in statistics for a nonspecialist audience. The articles favor heuristic explanations and make extensive use of simulated examples and graphical explanations, while maintaining mathematical rigor. 
+
+<p>Topics range from basic, but often misunderstood, such as uncertainty and <i>P</i>-values, to relatively advanced, but often neglected, such as the error-in-variables problem and the curse of dimensionality. More recent articles have focused on timely topics such as modeling of epidemics, machine learning, and neural networks. 
+
+<p>In this article, we discuss the evolution of topics and details behind some of the story arcs, our approach to crafting statistical explanations and narratives, and our use of figures and numerical simulations as props for building understanding.
+
+
+
+
+<div class="image" style="width:325px;"><div>
+<a href="https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034555">
+<img    src="/pointsofsignificance/img/pointsofsignificance-arsia.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="325px">
+</a>
+<div class=caption>
+<span class=vsmall>&#9650;</span> Crafting 10 Years of Statistics Explanations: Points of Significance.
+
+
+(<a href="https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034555">read</a>)
+</div>
+</div></div>
+<p class=small>
+
+
+Altman, N. & Krzywinski, M. (2025) <a href='https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034555'>Crafting 10 Years of Statistics Explanations: Points of Significance</a>. <i>Annual Review of Statistics and Its Application</i> <b>12</b>:69&ndash;87.
+</p>
+</div>
+<div class="thought bbot1">
+<h1><a href="
+
+http://www.nature.com/articles/s41592-024-02405-4
+">Propensity score matching</a></h1>
+<div class="sans timestamp vmar1">
+Mon 16-09-2024
+</div>
+<p><i>I don’t have good luck in the match points. &mdash;Rafael Nadal, Spanish tennis player</i></p>
+<p>In many experimental designs, we need to keep in mind the possibility of confounding variables, which may give rise to bias in the estimate of the treatment effect.
+
+
+
+
+<div class="image" style="width:325px;"><div>
+<a href="http://www.nature.com/articles/s41592-024-02405-4">
+<img    src="/pointsofsignificance/img/pointsofsignificance-propensity-score-matching.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="325px">
+</a>
+<div class=caption>
+<span class=vsmall>&#9650;</span> Nature Methods Points of Significance column: Propensity score matching.
+
+
+(<a href="http://www.nature.com/articles/s41592-024-02405-4">read</a>)
+</div>
+</div></div>
+<p>If the control and experimental groups aren't matched (or, roughly, similar enough), this bias can arise. 
+
+<p>Sometimes this can be dealt with by randomizing, which on average can balance this effect out. When randomization is not possible, propensity score matching is an excellent strategy to match control and experimental groups.
+
+<p class=small>
+
+
+Kurz, C.F., Krzywinski, M. & Altman, N.  (2024) <a href='http://www.nature.com/articles/s41592-024-02405-4'>Points of significance: Propensity score matching</a>. <i>Nat. Methods</i> <b>21</b>:1770&ndash;1772.
+</p>
+</div>
+<div class="thought bbot1">
+<h1><a href="
+
+https://journals.sagepub.com/doi/10.1177/00236772241247106
+">Understanding p-values and significance</a></h1>
+<div class="sans timestamp vmar1">
+Tue 24-09-2024
+</div>
+<p><i>P</i>-values combined with estimates of effect size are used to assess the importance of experimental results. However, their interpretation can be invalidated by selection bias when testing multiple hypotheses, fitting multiple models or even informally selecting results that seem interesting after observing the data. 
+
+<p>We offer an introduction to principled uses of <i>p</i>-values (targeted at the non-specialist) and identify questionable practices to be avoided.
+
+
+
+
+<div class="image" style="width:325px;"><div>
+<a href="https://journals.sagepub.com/doi/10.1177/00236772241247106">
+<img    src="/pointsofsignificance/img/pointsofsignificance-sage-p-values-significance.png"  alt="Martin Krzywinski @MKrzywinski mkweb.bcgsc.ca" width="325px">
+</a>
+<div class=caption>
+<span class=vsmall>&#9650;</span> Understanding p-values and significance.
+
+
+(<a href="https://journals.sagepub.com/doi/10.1177/00236772241247106">read</a>)
+</div>
+</div></div>
+<p class=small>
+
+
+Altman, N. & Krzywinski, M. (2024) <a href='https://journals.sagepub.com/doi/10.1177/00236772241247106'>Understanding p-values and significance</a>. <i>Laboratory Animals</i> <b>58</b>:443&ndash;446.
+</p>
+</div>
+</div>
+</div> <!-- page-2-panel -->
+<div class="on-the-side btop1 vpad4 vpadt4 vmar0">
+<a href="https://mk.bcgsc.ca/">Martin Krzywinski</a> | <a href="mailto:martink@bcgsc.ca">contact</a> | <a href="https://www.bcgsc.ca">Canada's Michael Smith Genome Sciences Centre</a> &sub; <a href="https://www.phsa.ca">PHSA</a>
+</div>
+<div class="on-the-side vpad4 vmar0 btop1">
+<a href="https://en.wikipedia.org/wiki/Googlewhack">Google whack</a> <a href="https://www.google.com/search?q=vicissitudinal+corporealization">&ldquo;vicissitudinal corporealization&rdquo;</a> 
+</div>
+<div class="sans center small grey">{ 10.9.208.191 } </div>
+</div> <!-- pagewrap-container -->
+<script src="/js/accordion.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

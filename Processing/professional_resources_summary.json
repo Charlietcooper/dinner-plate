@@ -1,0 +1,83 @@
+{
+  "resources": {
+    "yale_bright_star_catalogue": {
+      "name": "Yale Bright Star Catalogue (BSC)",
+      "description": "Professional astronomical standard for bright stars",
+      "total_stars": 9110,
+      "magnitude_limit": 6.5,
+      "coverage": "All stars visible to naked eye from Earth",
+      "source": "https://en.wikipedia.org/wiki/Bright_Star_Catalogue",
+      "features": [
+        "HR designations (Harvard Revised Photometry)",
+        "Accurate RA/Dec coordinates",
+        "V magnitudes and spectral types",
+        "Continuous updates since 1930",
+        "Used by professional astronomers"
+      ]
+    },
+    "martin_krzywinski_database": {
+      "name": "Martin Krzywinski Constellation Database",
+      "description": "Professional constellation figure database",
+      "total_constellations": 88,
+      "source": "https://mk.bcgsc.ca/constellations/sky-constellations.mhtml",
+      "star_chart": "https://mk.bcgsc.ca/constellations/posters/starchart.constellations.svg",
+      "features": [
+        "All 88 IAU constellations",
+        "Canonical asterism patterns",
+        "9,110 stars from Yale BSC",
+        "110 Messier objects",
+        "Professional-grade accuracy",
+        "Used by Sky & Telescope"
+      ]
+    },
+    "our_current_system": {
+      "name": "Our Current Constellation System",
+      "description": "Demonstration system with shape preservation",
+      "total_constellations": 14,
+      "total_stars": 55,
+      "features": [
+        "Canonical shape preservation",
+        "Real astronomical coordinates",
+        "Distortion limits (30% distance, 15\u00b0 angle)",
+        "Shape-preserving fitting algorithms",
+        "Professional visualization quality"
+      ]
+    }
+  },
+  "integration_benefits": {
+    "complete_coverage": {
+      "current": "14 constellations (16%)",
+      "professional": "88 constellations (100%)",
+      "improvement": "6.3x more constellations"
+    },
+    "star_data": {
+      "current": "55 stars",
+      "professional": "9,110 stars",
+      "improvement": "165x more stars"
+    },
+    "accuracy": {
+      "current": "Good for demonstration",
+      "professional": "IAU-approved, professional standard",
+      "improvement": "Professional-grade accuracy"
+    },
+    "messier_objects": {
+      "current": "0 objects",
+      "professional": "110 objects",
+      "improvement": "Add deep-sky object annotation"
+    }
+  },
+  "recommendations": [
+    "Integrate Yale Bright Star Catalogue for complete star data",
+    "Use Martin Krzywinski's constellation patterns for accuracy",
+    "Maintain our shape preservation algorithms",
+    "Add Messier object annotation capabilities",
+    "Scale to all 88 IAU constellations"
+  ],
+  "next_steps": [
+    "Download complete Yale BSC data",
+    "Parse Martin Krzywinski's constellation figures",
+    "Integrate with our shape preservation system",
+    "Create professional-grade visualizations",
+    "Test with real astronomical images"
+  ]
+}
