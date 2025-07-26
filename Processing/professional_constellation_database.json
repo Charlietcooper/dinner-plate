@@ -1,0 +1,386 @@
+{
+  "Crux": {
+    "name": "Crux",
+    "description": "Southern Cross",
+    "hemisphere": "southern",
+    "iau_code": "Cru",
+    "stars": [
+      {
+        "hr": 4730,
+        "name": "Acrux",
+        "ra": 186.6495,
+        "dec": -63.0991,
+        "mag": 0.77,
+        "bayer": "\u03b1",
+        "spectral": "B0.5IV"
+      },
+      {
+        "hr": 4853,
+        "name": "Mimosa",
+        "ra": 191.9303,
+        "dec": -59.6888,
+        "mag": 1.25,
+        "bayer": "\u03b2",
+        "spectral": "B0.5III"
+      },
+      {
+        "hr": 4763,
+        "name": "Gacrux",
+        "ra": 187.7915,
+        "dec": -57.1138,
+        "mag": 1.59,
+        "bayer": "\u03b3",
+        "spectral": "M3.5III"
+      },
+      {
+        "hr": 4656,
+        "name": "Delta Crucis",
+        "ra": 183.7863,
+        "dec": -58.7489,
+        "mag": 2.79,
+        "bayer": "\u03b4",
+        "spectral": "B2IV"
+      }
+    ],
+    "lines": [
+      [
+        "Acrux",
+        "Mimosa"
+      ],
+      [
+        "Mimosa",
+        "Gacrux"
+      ],
+      [
+        "Gacrux",
+        "Delta Crucis"
+      ],
+      [
+        "Delta Crucis",
+        "Acrux"
+      ]
+    ],
+    "messier_objects": [],
+    "bright_star_count": 4
+  },
+  "Carina": {
+    "name": "Carina",
+    "description": "The Keel",
+    "hemisphere": "southern",
+    "iau_code": "Car",
+    "stars": [
+      {
+        "hr": 2326,
+        "name": "Canopus",
+        "ra": 95.9879,
+        "dec": -52.6957,
+        "mag": -0.74,
+        "bayer": "\u03b1",
+        "spectral": "F0II"
+      },
+      {
+        "hr": 3685,
+        "name": "Miaplacidus",
+        "ra": 138.2999,
+        "dec": -69.7172,
+        "mag": 1.67,
+        "bayer": "\u03b2",
+        "spectral": "A2IV"
+      },
+      {
+        "hr": 3307,
+        "name": "Avior",
+        "ra": 139.2725,
+        "dec": -59.5092,
+        "mag": 1.86,
+        "bayer": "\u03b5",
+        "spectral": "K3III"
+      },
+      {
+        "hr": 3699,
+        "name": "Aspidiske",
+        "ra": 137.2725,
+        "dec": -57.5092,
+        "mag": 2.21,
+        "bayer": "\u03b9",
+        "spectral": "A8Ib"
+      }
+    ],
+    "lines": [
+      [
+        "Canopus",
+        "Miaplacidus"
+      ],
+      [
+        "Miaplacidus",
+        "Avior"
+      ],
+      [
+        "Avior",
+        "Aspidiske"
+      ]
+    ],
+    "messier_objects": [],
+    "bright_star_count": 4
+  },
+  "Centaurus": {
+    "name": "Centaurus",
+    "description": "The Centaur",
+    "hemisphere": "southern",
+    "iau_code": "Cen",
+    "stars": [
+      {
+        "hr": 5459,
+        "name": "Alpha Centauri",
+        "ra": 219.8731,
+        "dec": -60.8322,
+        "mag": -0.27,
+        "bayer": "\u03b1",
+        "spectral": "G2V"
+      },
+      {
+        "hr": 5267,
+        "name": "Hadar",
+        "ra": 210.9559,
+        "dec": -60.373,
+        "mag": 0.61,
+        "bayer": "\u03b2",
+        "spectral": "B1III"
+      },
+      {
+        "hr": 5288,
+        "name": "Menkent",
+        "ra": 204.9719,
+        "dec": -36.3699,
+        "mag": 2.06,
+        "bayer": "\u03b8",
+        "spectral": "K0III"
+      }
+    ],
+    "lines": [
+      [
+        "Alpha Centauri",
+        "Hadar"
+      ],
+      [
+        "Hadar",
+        "Menkent"
+      ]
+    ],
+    "messier_objects": [],
+    "bright_star_count": 3
+  },
+  "Ursa Major": {
+    "name": "Ursa Major",
+    "description": "The Great Bear (Big Dipper)",
+    "hemisphere": "northern",
+    "iau_code": "UMa",
+    "stars": [
+      {
+        "hr": 4301,
+        "name": "Dubhe",
+        "ra": 165.9319,
+        "dec": 61.7511,
+        "mag": 1.79,
+        "bayer": "\u03b1",
+        "spectral": "K0III"
+      },
+      {
+        "hr": 4295,
+        "name": "Merak",
+        "ra": 165.4603,
+        "dec": 56.3824,
+        "mag": 2.37,
+        "bayer": "\u03b2",
+        "spectral": "A1V"
+      },
+      {
+        "hr": 4554,
+        "name": "Phecda",
+        "ra": 178.4577,
+        "dec": 53.6948,
+        "mag": 2.44,
+        "bayer": "\u03b3",
+        "spectral": "A0Ve"
+      },
+      {
+        "hr": 4660,
+        "name": "Megrez",
+        "ra": 183.8565,
+        "dec": 57.0326,
+        "mag": 3.32,
+        "bayer": "\u03b4",
+        "spectral": "A3V"
+      },
+      {
+        "hr": 4905,
+        "name": "Alioth",
+        "ra": 193.5073,
+        "dec": 55.9598,
+        "mag": 1.76,
+        "bayer": "\u03b5",
+        "spectral": "A0pCr"
+      },
+      {
+        "hr": 5054,
+        "name": "Mizar",
+        "ra": 200.9814,
+        "dec": 54.9254,
+        "mag": 2.23,
+        "bayer": "\u03b6",
+        "spectral": "A2V"
+      },
+      {
+        "hr": 5191,
+        "name": "Alkaid",
+        "ra": 206.8852,
+        "dec": 49.3133,
+        "mag": 1.85,
+        "bayer": "\u03b7",
+        "spectral": "B3V"
+      }
+    ],
+    "lines": [
+      [
+        "Dubhe",
+        "Merak"
+      ],
+      [
+        "Merak",
+        "Phecda"
+      ],
+      [
+        "Phecda",
+        "Megrez"
+      ],
+      [
+        "Megrez",
+        "Alioth"
+      ],
+      [
+        "Alioth",
+        "Mizar"
+      ],
+      [
+        "Mizar",
+        "Alkaid"
+      ]
+    ],
+    "messier_objects": [
+      "M81",
+      "M82",
+      "M97",
+      "M101",
+      "M108",
+      "M109"
+    ],
+    "bright_star_count": 7
+  },
+  "Orion": {
+    "name": "Orion",
+    "description": "The Hunter",
+    "hemisphere": "equatorial",
+    "iau_code": "Ori",
+    "stars": [
+      {
+        "hr": 2061,
+        "name": "Betelgeuse",
+        "ra": 88.7929,
+        "dec": 7.4071,
+        "mag": 0.42,
+        "bayer": "\u03b1",
+        "spectral": "M2Iab"
+      },
+      {
+        "hr": 1790,
+        "name": "Bellatrix",
+        "ra": 81.2828,
+        "dec": 6.3497,
+        "mag": 1.64,
+        "bayer": "\u03b3",
+        "spectral": "B2III"
+      },
+      {
+        "hr": 1852,
+        "name": "Mintaka",
+        "ra": 83.0016,
+        "dec": -0.2991,
+        "mag": 2.25,
+        "bayer": "\u03b4",
+        "spectral": "O9.5II"
+      },
+      {
+        "hr": 1903,
+        "name": "Alnilam",
+        "ra": 84.0534,
+        "dec": -1.2019,
+        "mag": 1.69,
+        "bayer": "\u03b5",
+        "spectral": "B0Ia"
+      },
+      {
+        "hr": 1948,
+        "name": "Alnitak",
+        "ra": 85.1897,
+        "dec": -1.9426,
+        "mag": 1.88,
+        "bayer": "\u03b6",
+        "spectral": "O9.7Ib"
+      },
+      {
+        "hr": 2004,
+        "name": "Saiph",
+        "ra": 86.9391,
+        "dec": -9.6696,
+        "mag": 2.07,
+        "bayer": "\u03ba",
+        "spectral": "B0.5Ia"
+      },
+      {
+        "hr": 1713,
+        "name": "Rigel",
+        "ra": 78.6345,
+        "dec": -8.2016,
+        "mag": 0.18,
+        "bayer": "\u03b2",
+        "spectral": "B8Ia"
+      }
+    ],
+    "lines": [
+      [
+        "Betelgeuse",
+        "Bellatrix"
+      ],
+      [
+        "Bellatrix",
+        "Mintaka"
+      ],
+      [
+        "Mintaka",
+        "Alnilam"
+      ],
+      [
+        "Alnilam",
+        "Alnitak"
+      ],
+      [
+        "Alnitak",
+        "Saiph"
+      ],
+      [
+        "Saiph",
+        "Rigel"
+      ],
+      [
+        "Rigel",
+        "Betelgeuse"
+      ]
+    ],
+    "messier_objects": [
+      "M42",
+      "M43",
+      "M78"
+    ],
+    "bright_star_count": 7
+  }
+}

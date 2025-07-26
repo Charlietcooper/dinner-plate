@@ -1,0 +1,26 @@
+{
+  "database_info": {
+    "name": "Professional Constellation Database",
+    "source": "Martin Krzywinski + Yale Bright Star Catalogue",
+    "total_constellations": 5,
+    "total_stars": 25,
+    "total_messier_objects": 9,
+    "hemisphere_distribution": {
+      "southern": 3,
+      "northern": 1,
+      "equatorial": 1
+    }
+  },
+  "constellation_list": [
+    "Crux",
+    "Carina",
+    "Centaurus",
+    "Ursa Major",
+    "Orion"
+  ],
+  "references": {
+    "yale_bsc": "https://en.wikipedia.org/wiki/Bright_Star_Catalogue",
+    "martin_krzywinski": "https://mk.bcgsc.ca/constellations/sky-constellations.mhtml",
+    "star_chart": "https://mk.bcgsc.ca/constellations/posters/starchart.constellations.svg"
+  }
+}

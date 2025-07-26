@@ -1,0 +1,1164 @@
+[
+  {
+    "x": 2435,
+    "y": 3409,
+    "brightness": 207.48,
+    "area": 18.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3799,
+    "y": 3399,
+    "brightness": 195.4,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 413,
+    "y": 3393,
+    "brightness": 173.32,
+    "area": 6.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1457,
+    "y": 3392,
+    "brightness": 191.44,
+    "area": 6.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1850,
+    "y": 3390,
+    "brightness": 194.32,
+    "area": 7.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1326,
+    "y": 3389,
+    "brightness": 194.92,
+    "area": 10.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3166,
+    "y": 3369,
+    "brightness": 202.92,
+    "area": 13.5,
+    "method": "threshold"
+  },
+  {
+    "x": 497,
+    "y": 3349,
+    "brightness": 176.96,
+    "area": 8.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3053,
+    "y": 3335,
+    "brightness": 186.4,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3296,
+    "y": 3333,
+    "brightness": 191.2,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 791,
+    "y": 3318,
+    "brightness": 189.68,
+    "area": 7.0,
+    "method": "threshold"
+  },
+  {
+    "x": 625,
+    "y": 3312,
+    "brightness": 164.16,
+    "area": 6.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1267,
+    "y": 3303,
+    "brightness": 179.04,
+    "area": 3.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1149,
+    "y": 3299,
+    "brightness": 195.92,
+    "area": 13.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3597,
+    "y": 3297,
+    "brightness": 200.52,
+    "area": 14.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1376,
+    "y": 3279,
+    "brightness": 195.08,
+    "area": 12.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1791,
+    "y": 3272,
+    "brightness": 187.44,
+    "area": 3.5,
+    "method": "threshold"
+  },
+  {
+    "x": 234,
+    "y": 3257,
+    "brightness": 175.64,
+    "area": 6.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1569,
+    "y": 3249,
+    "brightness": 184.72,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 465,
+    "y": 3236,
+    "brightness": 196.52,
+    "area": 10.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1855,
+    "y": 3214,
+    "brightness": 202.44,
+    "area": 11.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1530,
+    "y": 3184,
+    "brightness": 184.68,
+    "area": 3.0,
+    "method": "threshold"
+  },
+  {
+    "x": 421,
+    "y": 3174,
+    "brightness": 201.04,
+    "area": 12.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1587,
+    "y": 3162,
+    "brightness": 205.68,
+    "area": 17.0,
+    "method": "threshold"
+  },
+  {
+    "x": 917,
+    "y": 3128,
+    "brightness": 211.04,
+    "area": 17.5,
+    "method": "threshold"
+  },
+  {
+    "x": 541,
+    "y": 3122,
+    "brightness": 201.44,
+    "area": 13.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3865,
+    "y": 3122,
+    "brightness": 193.04,
+    "area": 7.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1523,
+    "y": 3105,
+    "brightness": 214.24,
+    "area": 19.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1101,
+    "y": 3091,
+    "brightness": 184.2,
+    "area": 6.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1225,
+    "y": 3084,
+    "brightness": 201.2,
+    "area": 13.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1192,
+    "y": 3080,
+    "brightness": 208.8,
+    "area": 16.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1339,
+    "y": 3060,
+    "brightness": 180.32,
+    "area": 5.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3660,
+    "y": 3064,
+    "brightness": 194.32,
+    "area": 10.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1314,
+    "y": 3032,
+    "brightness": 200.28,
+    "area": 12.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1594,
+    "y": 3026,
+    "brightness": 200.8,
+    "area": 13.0,
+    "method": "threshold"
+  },
+  {
+    "x": 218,
+    "y": 3006,
+    "brightness": 163.76,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2098,
+    "y": 2992,
+    "brightness": 198.72,
+    "area": 14.5,
+    "method": "threshold"
+  },
+  {
+    "x": 562,
+    "y": 2970,
+    "brightness": 162.8,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 386,
+    "y": 2966,
+    "brightness": 183.84,
+    "area": 11.0,
+    "method": "threshold"
+  },
+  {
+    "x": 488,
+    "y": 2966,
+    "brightness": 211.2,
+    "area": 17.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2558,
+    "y": 2965,
+    "brightness": 189.48,
+    "area": 3.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1188,
+    "y": 2942,
+    "brightness": 208.64,
+    "area": 15.0,
+    "method": "threshold"
+  },
+  {
+    "x": 303,
+    "y": 2934,
+    "brightness": 181.64,
+    "area": 7.5,
+    "method": "threshold"
+  },
+  {
+    "x": 919,
+    "y": 2917,
+    "brightness": 179.68,
+    "area": 9.0,
+    "method": "threshold"
+  },
+  {
+    "x": 314,
+    "y": 2912,
+    "brightness": 177.16,
+    "area": 8.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3460,
+    "y": 2900,
+    "brightness": 203.88,
+    "area": 19.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1452,
+    "y": 2891,
+    "brightness": 179.6,
+    "area": 5.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1468,
+    "y": 2882,
+    "brightness": 196.8,
+    "area": 18.5,
+    "method": "threshold"
+  },
+  {
+    "x": 468,
+    "y": 2877,
+    "brightness": 203.8,
+    "area": 17.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1192,
+    "y": 2851,
+    "brightness": 200.4,
+    "area": 14.0,
+    "method": "threshold"
+  },
+  {
+    "x": 183,
+    "y": 2820,
+    "brightness": 213.88,
+    "area": 18.5,
+    "method": "threshold"
+  },
+  {
+    "x": 572,
+    "y": 2806,
+    "brightness": 166.88,
+    "area": 6.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1586,
+    "y": 2803,
+    "brightness": 190.8,
+    "area": 11.5,
+    "method": "threshold"
+  },
+  {
+    "x": 944,
+    "y": 2766,
+    "brightness": 208.24,
+    "area": 17.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3506,
+    "y": 2713,
+    "brightness": 198.28,
+    "area": 7.0,
+    "method": "threshold"
+  },
+  {
+    "x": 411,
+    "y": 2695,
+    "brightness": 199.64,
+    "area": 15.5,
+    "method": "threshold"
+  },
+  {
+    "x": 324,
+    "y": 2678,
+    "brightness": 203.68,
+    "area": 18.5,
+    "method": "threshold"
+  },
+  {
+    "x": 67,
+    "y": 2673,
+    "brightness": 179.72,
+    "area": 9.0,
+    "method": "threshold"
+  },
+  {
+    "x": 4171,
+    "y": 2670,
+    "brightness": 188.36,
+    "area": 2.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1782,
+    "y": 2665,
+    "brightness": 184.36,
+    "area": 5.5,
+    "method": "threshold"
+  },
+  {
+    "x": 653,
+    "y": 2659,
+    "brightness": 202.48,
+    "area": 17.0,
+    "method": "threshold"
+  },
+  {
+    "x": 31,
+    "y": 2654,
+    "brightness": 179.96,
+    "area": 5.0,
+    "method": "threshold"
+  },
+  {
+    "x": 853,
+    "y": 2646,
+    "brightness": 166.4,
+    "area": 2.5,
+    "method": "threshold"
+  },
+  {
+    "x": 451,
+    "y": 2638,
+    "brightness": 182.56,
+    "area": 7.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2601,
+    "y": 2633,
+    "brightness": 206.24,
+    "area": 17.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1283,
+    "y": 2613,
+    "brightness": 173.72,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 819,
+    "y": 2606,
+    "brightness": 171.0,
+    "area": 3.5,
+    "method": "threshold"
+  },
+  {
+    "x": 178,
+    "y": 2597,
+    "brightness": 213.44,
+    "area": 19.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1472,
+    "y": 2591,
+    "brightness": 207.32,
+    "area": 18.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1525,
+    "y": 2587,
+    "brightness": 180.68,
+    "area": 5.5,
+    "method": "threshold"
+  },
+  {
+    "x": 920,
+    "y": 2569,
+    "brightness": 197.48,
+    "area": 14.0,
+    "method": "threshold"
+  },
+  {
+    "x": 883,
+    "y": 2554,
+    "brightness": 178.04,
+    "area": 2.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4763,
+    "y": 2550,
+    "brightness": 188.28,
+    "area": 11.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1759,
+    "y": 2545,
+    "brightness": 196.92,
+    "area": 13.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2667,
+    "y": 2530,
+    "brightness": 202.96,
+    "area": 16.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2501,
+    "y": 2529,
+    "brightness": 198.2,
+    "area": 7.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2369,
+    "y": 2512,
+    "brightness": 194.56,
+    "area": 2.5,
+    "method": "threshold"
+  },
+  {
+    "x": 777,
+    "y": 2503,
+    "brightness": 191.56,
+    "area": 9.5,
+    "method": "threshold"
+  },
+  {
+    "x": 292,
+    "y": 2486,
+    "brightness": 186.12,
+    "area": 8.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1768,
+    "y": 2468,
+    "brightness": 189.72,
+    "area": 11.5,
+    "method": "threshold"
+  },
+  {
+    "x": 684,
+    "y": 2464,
+    "brightness": 195.32,
+    "area": 14.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2758,
+    "y": 2440,
+    "brightness": 192.72,
+    "area": 7.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1898,
+    "y": 2427,
+    "brightness": 186.24,
+    "area": 5.5,
+    "method": "threshold"
+  },
+  {
+    "x": 176,
+    "y": 2422,
+    "brightness": 160.8,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1302,
+    "y": 2421,
+    "brightness": 195.36,
+    "area": 14.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1242,
+    "y": 2394,
+    "brightness": 186.2,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3499,
+    "y": 2378,
+    "brightness": 199.6,
+    "area": 11.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1008,
+    "y": 2372,
+    "brightness": 165.12,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1448,
+    "y": 2371,
+    "brightness": 171.68,
+    "area": 3.0,
+    "method": "threshold"
+  },
+  {
+    "x": 242,
+    "y": 2367,
+    "brightness": 192.44,
+    "area": 3.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3111,
+    "y": 2354,
+    "brightness": 198.88,
+    "area": 7.5,
+    "method": "threshold"
+  },
+  {
+    "x": 5075,
+    "y": 2329,
+    "brightness": 191.88,
+    "area": 14.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2160,
+    "y": 2326,
+    "brightness": 197.48,
+    "area": 5.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2337,
+    "y": 2294,
+    "brightness": 199.2,
+    "area": 8.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4770,
+    "y": 2293,
+    "brightness": 189.72,
+    "area": 10.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4764,
+    "y": 2285,
+    "brightness": 179.36,
+    "area": 3.0,
+    "method": "threshold"
+  },
+  {
+    "x": 235,
+    "y": 2246,
+    "brightness": 185.12,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 4733,
+    "y": 2250,
+    "brightness": 184.52,
+    "area": 11.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1286,
+    "y": 2232,
+    "brightness": 206.68,
+    "area": 18.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4534,
+    "y": 2227,
+    "brightness": 186.2,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 200,
+    "y": 2204,
+    "brightness": 184.92,
+    "area": 15.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1886,
+    "y": 2192,
+    "brightness": 195.72,
+    "area": 12.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2499,
+    "y": 2189,
+    "brightness": 203.88,
+    "area": 13.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3739,
+    "y": 2164,
+    "brightness": 197.92,
+    "area": 9.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1514,
+    "y": 2123,
+    "brightness": 180.8,
+    "area": 6.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3217,
+    "y": 2112,
+    "brightness": 194.76,
+    "area": 2.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1886,
+    "y": 2070,
+    "brightness": 184.76,
+    "area": 5.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1570,
+    "y": 2048,
+    "brightness": 195.0,
+    "area": 16.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1,
+    "y": 2049,
+    "brightness": 232.3,
+    "area": 16.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3381,
+    "y": 2044,
+    "brightness": 191.36,
+    "area": 3.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1116,
+    "y": 2018,
+    "brightness": 190.12,
+    "area": 12.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2341,
+    "y": 1974,
+    "brightness": 193.6,
+    "area": 10.5,
+    "method": "threshold"
+  },
+  {
+    "x": 544,
+    "y": 1956,
+    "brightness": 182.16,
+    "area": 3.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1947,
+    "y": 1950,
+    "brightness": 190.48,
+    "area": 7.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2763,
+    "y": 1929,
+    "brightness": 198.0,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1820,
+    "y": 1924,
+    "brightness": 177.44,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2564,
+    "y": 1890,
+    "brightness": 201.52,
+    "area": 6.0,
+    "method": "threshold"
+  },
+  {
+    "x": 400,
+    "y": 1875,
+    "brightness": 196.32,
+    "area": 12.0,
+    "method": "threshold"
+  },
+  {
+    "x": 919,
+    "y": 1861,
+    "brightness": 179.88,
+    "area": 12.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1431,
+    "y": 1861,
+    "brightness": 201.4,
+    "area": 17.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1615,
+    "y": 1849,
+    "brightness": 186.64,
+    "area": 5.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3238,
+    "y": 1844,
+    "brightness": 185.04,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3087,
+    "y": 1840,
+    "brightness": 196.04,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2170,
+    "y": 1831,
+    "brightness": 197.0,
+    "area": 9.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1114,
+    "y": 1806,
+    "brightness": 190.96,
+    "area": 9.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1575,
+    "y": 1785,
+    "brightness": 181.24,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3257,
+    "y": 1776,
+    "brightness": 199.2,
+    "area": 15.0,
+    "method": "threshold"
+  },
+  {
+    "x": 838,
+    "y": 1764,
+    "brightness": 198.84,
+    "area": 14.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1722,
+    "y": 1699,
+    "brightness": 173.96,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 510,
+    "y": 1692,
+    "brightness": 195.2,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3415,
+    "y": 1685,
+    "brightness": 203.16,
+    "area": 15.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1355,
+    "y": 1665,
+    "brightness": 192.64,
+    "area": 10.0,
+    "method": "threshold"
+  },
+  {
+    "x": 353,
+    "y": 1647,
+    "brightness": 177.04,
+    "area": 8.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1588,
+    "y": 1632,
+    "brightness": 204.44,
+    "area": 19.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1147,
+    "y": 1631,
+    "brightness": 188.68,
+    "area": 11.0,
+    "method": "threshold"
+  },
+  {
+    "x": 790,
+    "y": 1610,
+    "brightness": 198.84,
+    "area": 13.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2899,
+    "y": 1603,
+    "brightness": 205.68,
+    "area": 19.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2366,
+    "y": 1557,
+    "brightness": 204.04,
+    "area": 15.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1624,
+    "y": 1554,
+    "brightness": 185.48,
+    "area": 2.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4071,
+    "y": 1528,
+    "brightness": 201.28,
+    "area": 10.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3229,
+    "y": 1466,
+    "brightness": 207.4,
+    "area": 19.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2121,
+    "y": 1407,
+    "brightness": 197.36,
+    "area": 8.0,
+    "method": "threshold"
+  },
+  {
+    "x": 4454,
+    "y": 1400,
+    "brightness": 188.84,
+    "area": 3.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4449,
+    "y": 1394,
+    "brightness": 188.4,
+    "area": 6.0,
+    "method": "threshold"
+  },
+  {
+    "x": 762,
+    "y": 1292,
+    "brightness": 189.16,
+    "area": 5.5,
+    "method": "threshold"
+  },
+  {
+    "x": 466,
+    "y": 1246,
+    "brightness": 200.24,
+    "area": 14.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4909,
+    "y": 1191,
+    "brightness": 178.12,
+    "area": 4.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2478,
+    "y": 1140,
+    "brightness": 206.64,
+    "area": 15.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1411,
+    "y": 1104,
+    "brightness": 192.4,
+    "area": 6.5,
+    "method": "threshold"
+  },
+  {
+    "x": 560,
+    "y": 1067,
+    "brightness": 192.88,
+    "area": 5.0,
+    "method": "threshold"
+  },
+  {
+    "x": 556,
+    "y": 1066,
+    "brightness": 188.04,
+    "area": 3.0,
+    "method": "threshold"
+  },
+  {
+    "x": 4001,
+    "y": 1003,
+    "brightness": 189.52,
+    "area": 5.0,
+    "method": "threshold"
+  },
+  {
+    "x": 3059,
+    "y": 850,
+    "brightness": 204.08,
+    "area": 13.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1976,
+    "y": 843,
+    "brightness": 203.52,
+    "area": 11.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3005,
+    "y": 653,
+    "brightness": 205.88,
+    "area": 19.5,
+    "method": "threshold"
+  },
+  {
+    "x": 3375,
+    "y": 303,
+    "brightness": 203.16,
+    "area": 19.5,
+    "method": "threshold"
+  },
+  {
+    "x": 4494,
+    "y": 190,
+    "brightness": 182.68,
+    "area": 17.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1248,
+    "y": 120,
+    "brightness": 205.16,
+    "area": 12.0,
+    "method": "threshold"
+  },
+  {
+    "x": 1914,
+    "y": 117,
+    "brightness": 196.6,
+    "area": 4.5,
+    "method": "threshold"
+  },
+  {
+    "x": 2845,
+    "y": 37,
+    "brightness": 202.36,
+    "area": 10.0,
+    "method": "threshold"
+  },
+  {
+    "x": 2492,
+    "y": 24,
+    "brightness": 196.24,
+    "area": 3.5,
+    "method": "threshold"
+  },
+  {
+    "x": 1356,
+    "y": 1666,
+    "brightness": 223.0,
+    "area": 19.0,
+    "method": "peak"
+  },
+  {
+    "x": 1576,
+    "y": 1786,
+    "brightness": 223.0,
+    "area": 11.0,
+    "method": "peak"
+  },
+  {
+    "x": 236,
+    "y": 2246,
+    "brightness": 218.0,
+    "area": 11.0,
+    "method": "peak"
+  },
+  {
+    "x": 656,
+    "y": 3171,
+    "brightness": 220.0,
+    "area": 7.0,
+    "method": "peak"
+  },
+  {
+    "x": 1851,
+    "y": 3391,
+    "brightness": 211.0,
+    "area": 15.0,
+    "method": "peak"
+  }
+]

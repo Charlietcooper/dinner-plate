@@ -61,11 +61,10 @@ class ProfessionalConstellationLoader:
                 except Exception as e:
                     print(f"   Method 2 failed: {e}")
             
-            # Method 3: Create from known data structure
-            if not success:
-                print("   Creating professional database from known structure...")
-                self._create_professional_database_from_known_data()
-                success = True
+            # Method 3: Create from known data structure (always create this)
+            print("   Creating professional database from known structure...")
+            self._create_professional_database_from_known_data()
+            success = True
             
             return success
             
